@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    
+
+    <div class="container">
+        
+      <label class="accordion-toggle" id="accordion" for="text" onclick="showPone()">Section One</label>
+      <!-- <a href="#" id="panel" class="accordion-toggle">Section One</a> -->
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          <p id="msg1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+
+      <label class="accordion-toggle" id="accordion" for="text" onclick="showPtwo()">Section Two</label>
+      <!-- <a href="#" id="panel" >Section Two</a> -->
+      <div onclick="hidecontent()" class="accordion-content">
+        <div class="accordion-inner">
+          <p id="msg2">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </p>
+        </div>
+      </div>
+
+      <label class="accordion-toggle" id="accordion" for="text"onclick="showPthree()">Section Three</label>
+      <!-- <a href="#" id="panel" class="accordion-toggle">Section Three</a> -->
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          <p id="msg3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

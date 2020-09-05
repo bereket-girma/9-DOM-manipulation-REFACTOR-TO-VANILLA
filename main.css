@@ -1,0 +1,47 @@
+body {
+  font-family: helvetica;
+  font-size: 18px;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  text-align: left;
+  margin: 1%;
+  width: 50%;
+  border: 1px solid #58c4d4;
+  padding-top: -7px;
+}
+
+label {
+  display: block;
+  color: white;
+  background: #58c4d4;
+  font-size: 25px;
+  padding: 10px;
+  margin: 0;
+  font-weight: lighter;
+  transition: height 25em linear;
+  /* -webkit-transition: .4s;
+  transition: .4s; */
+}
+
+p {
+  /* padding: 5px; */
+  margin: 28px 19px;
+  color: grey;
+  display: none;
+  transition: all 5s;
+ 
+ 
+}
+
+#accordion:hover {
+    background:#7ed4e0;
+}
+
+p:target {
+    height: 50px;
+  }
+   
+
