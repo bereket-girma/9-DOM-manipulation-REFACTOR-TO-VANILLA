@@ -1,47 +1,101 @@
-body {
-  font-family: helvetica;
-  font-size: 18px;
-  text-align: center;
-}
-
-.container {
-  display: inline-block;
-  text-align: left;
-  margin: 1%;
-  width: 50%;
-  border: 1px solid #58c4d4;
-  padding-top: -7px;
-}
-
-label {
-  display: block;
-  color: white;
-  background: #58c4d4;
-  font-size: 25px;
-  padding: 10px;
-  margin: 0;
-  font-weight: lighter;
-  transition: height 25em linear;
-  /* -webkit-transition: .4s;
-  transition: .4s; */
-}
-
-p {
-  /* padding: 5px; */
-  margin: 28px 19px;
-  color: grey;
-  display: none;
-  transition: all 5s;
- 
- 
-}
-
-#accordion:hover {
-    background:#7ed4e0;
-}
-
-p:target {
-    height: 50px;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: helvetica;
   }
-   
-
+  
+  body {
+	background-color: white;
+	/* text-align: center; */
+	display: flex;
+  }
+  
+  h1,
+  h2 {
+	font-weight: normal;
+  }
+  
+  .container {
+	padding: 2rem;
+	width: 50%;
+  }
+  
+  p {
+	color: grey;
+  }
+  
+  .accordionItem {
+	float: left;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: helvetica;
+	margin-top: -10px;
+  }
+  .accordionItemTitle {
+	cursor: pointer;
+	margin: 0px 0px 10px 0px;
+	padding: 10px;
+	background: #58c4d4;
+	color: #fff;
+	width: 100%;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	box-sizing: border-box;
+	font-weight: lighter;
+  }
+  .accordionItemTitle:hover {
+	background: #7ed4e0;
+  }
+  
+  .close .accordionItemContent {
+	height: 0px;
+	transition: height 1s ease-out;
+	-webkit-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+	float: left;
+	display: block;
+  }
+  .open .accordionItemContent {
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #58c4d4;
+	/* width: 100%; */
+	margin: 0px 0px 10px 0px;
+	display: block;
+	-webkit-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+	-webkit-transform-origin: top;
+	-o-transform-origin: top;
+	-ms-transform-origin: top;
+	transform-origin: top;
+  
+	-webkit-transition: -webkit-transform 0.9s ease-out;
+	-o-transition: -o-transform 0.9s ease;
+	-ms-transition: -ms-transform 0.9s ease;
+	transition: transform 0.9s ease;
+	box-sizing: border-box;
+  }
+  
+  .open .accordionItemTitle {
+	margin: 0px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+  }
+  

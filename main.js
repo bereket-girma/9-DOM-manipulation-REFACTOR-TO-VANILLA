@@ -1,26 +1,14 @@
-function showPone() {
-    document.querySelector('#msg1').style.display = "block";
-    document.querySelector('#msg2').style.display = "none";
-    document.querySelector('#msg3').style.display = "none";
-    
+var accItem = document.getElementsByClassName('accordionItem');
+var accHD = document.getElementsByClassName('accordionItemTitle');
+for (i = 0; i < accHD.length; i++) {
+    accHD[i].addEventListener('click', toggleItem, false);
 }
-
-function showPtwo() {
-    document.querySelector('#msg2').style.display = "block";
-    document.querySelector('#msg1').style.display = "none";
-    document.querySelector('#msg3').style.display = "none";
-
+function toggleItem() {
+    var itemClass = this.parentNode.className;
+    for (i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+    }
+    if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+    }
 }
-
-function showPthree() {
-    document.querySelector('#msg3').style.display = "block";
-    document.querySelector('#msg1').style.display = "none";
-    document.querySelector('#msg2').style.display = "none";
-
-}
-
-
-
-//    function hidecontent(){
-//     document.querySelector(".accordion-content").style.transition = "5s";
-//    }
